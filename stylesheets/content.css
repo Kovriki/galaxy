@@ -21,7 +21,7 @@ body::before {
   background: url('../images/1400.png');
   height: 100%;
   display: block;
-  opacity: .2;
+  opacity: 0;
 }
 nav {
 width: 100vw;
@@ -150,7 +150,7 @@ margin-top: 30px;
   margin-top: 240px;
   margin-bottom: 50px;
 }
-.second  h1, .fourth h1, .six h1{
+.second  h1, .fourth h1, .six h1, .eight h1, .nine h1 {
   font-family: 'Poppins', sans-serif;
   font-size: 72px;
   font-weight: 600;
@@ -545,15 +545,13 @@ hr{
 
 
 .yellow_curve{
-      width: 590px;
+  width: 590px;
   height: 550px;
   background-image: url("../images/yellow_curve.png");
   background-position: left;
   background-repeat: no-repeat;
   background-size: contain;
   position:absolute;
-  /* top: 170px; */
-  /* left: 960px; */
   right: 0;
   margin-top: 50px;
 }
@@ -599,4 +597,184 @@ hr{
   background-size: contain;
   filter: grayscale();
   margin: auto;
+}
+
+.seven {
+  width: 100vw;
+  height: 700px;
+  background-color: #2C54C5;
+}
+.yellow_curve_2 {
+  width: 630px;
+  height: 370px;
+  background-image: url("../images/yellow_curve_2.png");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position:absolute;
+  right: 0;
+  z-index: 1;
+}
+ .eight h1{
+   text-align: center;
+   margin-top: 210px;
+   z-index: 5;
+ }
+ .eight hr {
+   margin-top: 100px;
+   margin-bottom: 100px;
+ }
+ .eight p {
+   width: 650px;
+   text-align: center;
+   font-size: 24px;
+   line-height: 1.5;
+   position: relative;
+   margin: auto;
+ }
+ .logo_box{
+   width: 85%;
+   height: 300px;
+   border: 1px solid #C4C4C4;
+   border-right: none;
+   border-left: none;
+   margin: auto;
+   margin-top: 105px;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+  align-items: center;
+ }
+ .logo_item {
+   width: 25%;
+   height: 80%;
+   /* height: 100%; */
+   border-right: 1px solid #C4C4C4;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   position: relative;
+
+ }
+ .logo_box .logo_item:last-child {
+   border: none;
+ }
+.emg_logo, .gpm_logo, .rmg_logo, .krutoy_logo {
+  width: 110px;
+  height: 45px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  filter: grayscale();
+  position: absolute;
+
+}
+.emg_logo{
+  background-image: url("../images/emg_logo.png");
+  top: 10px;
+  position: absolute;
+
+}
+ .gpm_logo {
+   background-image: url("../images/gpm_logo.png");
+   height: 70px;
+ }
+ .rmg_logo {
+   background-image: url("../images/rmg_logo.png");
+   width: 110px;
+   background-size: contain;
+   height: 55px;
+   top: 10px;
+   position: absolute;
+
+ }
+ .krutoy_logo {
+   background-image: url("../images/krutoy_logo.png");
+   height: 90px;
+ }
+ .logo_item p {
+   text-align: center;
+   position: absolute;
+  top: 120px;
+  color: #5D5D5D;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.2;
+  font-weight: 400;
+ }
+
+.nine {
+margin-top: 200px;
+}
+.nine_box{
+  display: flex;
+  flex-direction: row;
+}
+.nine_box h1 {
+  margin-right: 0;
+}
+.nine_box hr{
+  margin-left: 2%;
+  margin-right: 5.5%;
+  margin-bottom: 0;
+}
+.invite {
+  margin-left: 170px;
+  margin-top: 10px;
+}
+.contact_item {
+  font-size: 24px;
+  font-weight: 600;
+}
+.c_point {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 50px;
+
+}
+.contact {
+  font-size: 48px;
+  color: #5D5D5D;
+  font-weight: 100;
+  font-size: "Poppins", sans-serif;
+}
+
+.contact_box{
+   margin-top: 100px;
+}
+.nine_block{
+  display: flex;
+  flex-direction: row;
+
+}
+.illustration_6{
+  width: 320px;
+  height: 320px;
+  background-image: url("../images/illustration_6.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 12%;
+}
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+form{
+  width: 510px;
+  height: 45px;
+}
+.row input {
+  /* width: 17%; */
+  width: 47%;
+
+}
+input{
+  border-radius: 5px;
+  border: 1px solid #C4C4C4;
+  font-family: "Poppins";
+  height: 35px;
+  margin-top: 20px;
+  margin-bottom: 10px
 }
