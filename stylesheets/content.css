@@ -115,7 +115,7 @@ height: auto;
   margin-left: 80px;
   margin-top: 200px;
 }
-.stroke{
+.stroke, .stroke_2 {
 width: 100vw;
 height: 260px;
 background-image: url("../images/galaxy_stroke.png");
@@ -124,7 +124,9 @@ background-repeat: no-repeat;
 background-size: cover;
 margin-top: 30px;
 }
-
+.stroke_2{
+  margin-top: 50px;
+}
 
 .typo_comp {
   width: 700px;
@@ -148,7 +150,7 @@ margin-top: 30px;
   margin-top: 240px;
   margin-bottom: 50px;
 }
-.second  h1{
+.second  h1, .fourth h1, .six h1{
   font-family: 'Poppins', sans-serif;
   font-size: 72px;
   font-weight: 600;
@@ -171,20 +173,430 @@ hr{
   font-size: 48px;
   font-weight: 500;
   margin: 0 160px;
+  margin-top: 30px;
 }
-.text_box p {
+.text_box .p_box  p {
   width: 600px;
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
   font-weight: 400;
-  margin-top: 30px;
-
+  margin-top: 40px;
+  margin-left: 170px;
+  line-height: 1.5;
+}
+.p_box p:first-child  {
+    margin-top: 80px;
 }
 .pattern {
-  width: 250px;
-  height: 520px;
+  width: 500px;
+  height: 650px;
   background-image: url("../images/circle_pattern.png");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: 100%;
+  width: 35vw;
+  height: 45vw;
+}
+
+.third {
+  position: relative;
+  /* z-index: 5; */
+  width: 100vw;
+  height: 100vw;
+  background-image: url("../images/illustration_5.png");
+  background-position: 0 - 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+  margin-top: -60px;
+
+  /* opacity: .4; */
+}
+
+.rec_point {
+  width: 15px;
+  height: 15px;
+  background-color: #1242E3;
+  margin: 15px;
+  z-index: 2;
+
+}
+
+.third_text_block{
+  display: flex;
+  flex-direction: row;
+  z-index: 3;
+
+}
+.third_block {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  position: relative;
+  margin: auto;
+  margin-top: 300px;
+  z-index: 4;
+}
+.third_block p{
+  font-size: 18px;
+  font-weight: 400;
+  width: 550px;
+  margin-left: 45px;
+  margin-top: 30px;
+  line-height: 1.5;
+  z-index: 5;
+
+}
+.third_text_block h2{
+  font-size: 36px;
+  font-weight: 600;
+  z-index: 6;
+}
+.second_block {
+  margin-left: 36%;
+  margin-top: 130px;
+  z-index: 7;
+
+}
+.round_galaxy {
+  width: 300px;
+  height: 300px;
+  background-image: url("../images/round_galaxy.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: spin 10s linear infinite;
+  position: relative;
+  margin: auto;
+  margin-top: 300px;
+  z-index: 8;
+
+}
+@keyframes spin {
+  0%{
+    transform: rotate(0);
+  }
+  100%{
+    transform: rotate(-360deg);
+  }
+}
+.fourth{
+  width: 100vw;
+  height: auto;
+  overflow: hidden;
+}
+.arrow_point {
+  width: 77px;
+  height: 77px;
+  background-image: url("../images/arrow_point.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-right: 50px;
+  margin-top: 10px;
+}
+.fourth_block{
+  position: absolute;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: auto;
+    margin-top: 120px;
+}
+.fourth_text_block{
+  font-size: 48px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+}
+.fourth_block p {
+  width: 270px;
+  margin-left: 107px;
+  margin-top: 30px;
+}
+.circles, .circles_2{
+  width: 440px;
+  height: 1050px;
+  background-image: url("../images/circles.png");
+  background-position: left;
+  background-repeat: no-repeat;
   background-size: contain;
+  position:absolute;
+  /* top: 170px; */
+  /* left: 960px; */
+  right: 0;
+  margin-top: 80px;
+}
+.circles_2 {
+  width: 580px;
+  height: 1100px;
+  background-image: url("../images/circles_2.png");
+  left: 0;
+  margin-top: -400px;
+}
+/* желтый прямоугольник и его наполнение */
+.yellow_rec {
+  width: 722px;
+  height: 482px;
+  background-color: #FFDE7A;
+  margin-top: 55px;
+  margin-left: 8%;
+  position: relative;
+  padding-top: 70px;
+  /* padding-left: 120px; */
+  z-index: 1;
+
+}
+.yellow_rec hr {
+  height: 1px;
+  margin: 0;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: white;
+  border: none;
+  border-bottom: 1px solid white;
+  width: 722px;
+}
+.yellow_rec h2, .trans_rec h2, .yellow_cicl h2, .second_block h2{
+  font-size: 48px;
+  font-weight: 600;
+  z-index: 6;
+  margin-left: 120px;
+  line-height: 1.2;
+  /* margin-top: 70px; */
+}
+.yellow_rec p, .trans_rec p{
+  margin-left: 120px;
+  margin-top: 25px;
+  line-height: 1.5;
+  font-weight: 400;
+  /* margin-top: 30px; */
+}
+.trans_rec p{
+  width: 320px;
+
+}
+
+.white_circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px white solid;
+  position: absolute;
+  top:76px;
+  left:35px;
+}
+.repeat_2 p:first-child {
+      margin-top: 60px;
+}
+
+
+
+/*прозрачный прямоугольник и его наполнение */
+
+.trans_rec{
+  width: 735px;
+  height: 633px;
+  border: 1px solid #5D5D5D;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 2;
+  top: -80px;
+  padding-top: 50px;
+  margin-left: 40%;
+
+}
+.trans_rec hr{
+  width: 100%;
+  color:#5D5D5D;
+  border: none;
+  border-top: 1px solid  #5D5D5D;
+  margin:0;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  /* margin-left: 0; */
+
+
+}
+
+#layer1, #layer2 {
+    position: relative; /* Относительное позиционирование */
+   }
+
+
+   #layer1 { z-index: 1; }
+   #layer2 { z-index: 2;
+     top: -55px; /* Сдвигаем текст вверх */
+      left: 5px; /* Сдвигаем текст вправо */ }
+.yellow_cicl{
+  width: 650px;
+  height: 650px;
+  background-color: #FFDE7A;
+  border-radius: 50%;
+  position: relative;
+  margin: auto;
+}
+.yellow_cicl h2{
+  /* position: absolute; */
+  /* margin: auto; */
+  /* margin-top: 30px; */
+  /* top: 235px; */
+  margin: auto;
+  margin-top: 150px;
+  position: relative;
+  text-align: center;
+
+}
+.white_arrow_point{
+  width:77px;
+  height: 77px;
+  background-image: url("../images/white_arrow_point.svg");
+  margin: auto;
+  top: 130px;
+  position: relative;
+  margin: auto;
+}
+.yellow_cicl p{
+  top: 25px;
+  line-height: 1.5;
+  font-weight: 400;
+  position: relative;
+  margin: auto;
+  text-align: center;
+  margin-top: 25px;
+}
+.yellow_cicl p:first-child {
+  position: relative;
+
+  margin-top: 30px;
+}
+
+
+
+
+
+.fifth{
+  width: 100vw;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+}
+.triangle_point {
+  width: 90px;
+  height: 90px;
+  background-image: url("../images/triangle_point.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-right: 15px;
+  margin-top: 10px;
+}
+.square_point {
+  width: 95px;
+  height: 95px;
+  background-image: url("../images/square_point.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-top: 10px;
+      margin-left: -8px;
+}
+
+.fifth_block{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: auto;
+}
+.fifth_text_block{
+  font-size: 48px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.fifth .fifth_block:first-child {
+  margin-left: 17%;
+    margin-top: 86px;
+}
+.fifth_block p {
+  width: 270px;
+  margin-left: 107px;
+  margin-top: 22px;
+ line-height: 1.5;
+}
+.second_block {
+  margin-top: 250px;
+}
+.second_block h2{
+  margin-top: 40px;
+  margin-left: 0;
+}
+.second_block p{
+  margin-left: 0;
+  margin-top: 22px;
+}
+
+
+.yellow_curve{
+      width: 590px;
+  height: 550px;
+  background-image: url("../images/yellow_curve.png");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position:absolute;
+  /* top: 170px; */
+  /* left: 960px; */
+  right: 0;
+  margin-top: 50px;
+}
+
+
+.repeat{
+  margin-top: 105px;
+  width: 605px;
+  height: 502px;
+  margin-left: 15%;
+  padding-top: 50px;
+}
+.repeat p {
+  width: 265px;
+}
+.repeat hr {
+  width: 605px;
+}
+.repeat_2 {
+  width: 530px;
+  height: 530px;
+  top: -86px;
+  left: 90px;
+}
+.repeat_2 h2 {
+  margin: 30px;
+  text-align: center;
+}
+.six h1 {
+  /* position: relative; */
+  text-align: center;
+  margin-top: 230px;
+}
+.six hr {
+  margin-bottom: 140px;
+}
+.clients_logo{
+  width: 630px;
+  height: 80px;
+  background-image: url("../images/clients_logo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  filter: grayscale();
+  margin: auto;
 }
