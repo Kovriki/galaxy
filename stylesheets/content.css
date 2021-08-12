@@ -69,7 +69,8 @@ align-items: center;
 .first_box{
 width: 100vw;
 height: auto;
-
+z-index: 3;
+position: inherit;
 }
 .first_box h1{
   font-family: 'Poppins', sans-serif;
@@ -144,6 +145,7 @@ margin-top: 30px;
   height: 780px;
   background-image: url("../images/stat.png");
   margin: 20px auto;
+      background-size: contain;
 
 }
 .second {
@@ -203,13 +205,13 @@ hr{
   /* z-index: 5; */
   width: 100vw;
   height: 100vw;
-  background-image: url("../images/illustration_5.png");
+  /* background-image: url("../images/illustration_5.png"); */
   background-position: 0 - 300px;
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 1;
   margin-top: -60px;
-
+  position: relative;
   /* opacity: .4; */
 }
 
@@ -235,7 +237,7 @@ hr{
   margin: 0;
   position: relative;
   margin: auto;
-  margin-top: 300px;
+  /* margin-top: 300px; */
   z-index: 4;
 }
 .third_block p{
@@ -253,6 +255,26 @@ hr{
   font-weight: 600;
   z-index: 6;
 }
+
+
+.yellow_curve_1{
+  width: 100vw;
+  height: 100%;
+  background-image: url("../images/yellow_curve_1.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+
+
+
+
+.gray_square{
+
+}
+
 .second_block {
   margin-left: 36%;
   margin-top: 130px;
@@ -265,6 +287,7 @@ hr{
   background-image: url("../images/round_galaxy.png");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: contain;
   animation: spin 10s linear infinite;
   position: relative;
   margin: auto;
@@ -280,6 +303,15 @@ hr{
     transform: rotate(-360deg);
   }
 }
+@keyframes scale {
+  0%{
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(1.2);
+  }
+}
+
 .fourth{
   width: 100vw;
   height: auto;
@@ -317,6 +349,9 @@ hr{
   width: 270px;
   margin-left: 107px;
   margin-top: 30px;
+}
+.circles{
+  animation: scale 5s infinite ease alternate;
 }
 .circles, .circles_2{
   width: 440px;
@@ -495,6 +530,7 @@ hr{
   background-size: contain;
   margin-right: 15px;
   margin-top: 10px;
+  animation: spin 40s infinite linear;
 }
 .square_point {
   width: 95px;
@@ -505,6 +541,7 @@ hr{
   background-size: contain;
   margin-top: 10px;
       margin-left: -8px;
+      animation: spin 40s infinite linear;
 }
 
 .fifth_block{
@@ -777,4 +814,17 @@ input{
   height: 35px;
   margin-top: 20px;
   margin-bottom: 10px
+}
+.illustration_1{
+  width: 770px;
+  height: 570px;
+  background-image: url("../images/illustration_1.png");
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: 140%;
+  position:absolute;
+  /* top: 170px; */
+  /* left: 960px; */
+  right: 0;
+  /* margin-top: 80px;  */
 }
