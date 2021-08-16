@@ -29,8 +29,17 @@ $(document).ready(function() {
 		});
 	});
 
-
-// $(".slider_box").slick();
-$('.single-item').slick();
+	$(document).ready(function() {
+	  $('.slider_box').slick({
+	    // slidesToShow: 3,
+	    // slidesToScroll: 1,
+			arrows: false,
+			dots: true,
+			button:false,
+	    autoplay: true,
+	    autoplaySpeed: 40000,
+			dots: true,
+	  });
+	});
 
 });

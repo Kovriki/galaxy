@@ -16,12 +16,14 @@
 
     <link rel="stylesheet" href="stylesheets/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="js/libs/slick/slick.css">
     <script src="js/libs/slick/slick.min.js"></script>
-    <script src="js/main.js">
-        $(document).ready(function(){
-          $('.single-item').slick();
-        });
-    </script>
+    <script src="js/main.js"></script>
+
+
+
+
+
   </head>
   <body>
     <nav>
@@ -83,11 +85,12 @@
   </div>
 </div>
 <div class="third">
-
-  <div class="yellow_curve_1">
-    <div class="gray_square"></div>
+  <div class="anim_wrapper">
+    <div class="yellow_curve_1">
+      <div class="gray_square"></div>
+    </div>
   </div>
-  <div class="gray_square"></div>
+
 
     <div class="third_block">
       <div class="third_text_block">
@@ -240,12 +243,31 @@
 
 <div class="seven">
     <div class="slider_box">
+
       <div class="slide">
         <div class="text">Клиент РА Гэлакси «Берлин-Хеми/А. Менарини» сохраняет за собой лидерство на рынке рекламы по медиа показателям. Продвижение всех брендов Заказчика под ключ, от медиапланирования и исследований до спонсорских и нестандартных кампаний, от креатива и Production до размещения. Легендарные кампании, слоганы и креативные решения, такие как "Если кашляешь - прими Бромгексин Берлин-Хеми", "В животе ураган - принимай Эспумизан", креатив и решения для брендов Лиотон, МИГ, Мезим, Фастум гель, Йодомарин (включая участие в разработке названия бренда "Йодомарин").</div>
-        <video src="videofile.ogg" autoplay poster="posterimage.jpg">        </video>
+        <video src="videofile.ogg" autoplay controls class="video_item">        </video>
       </div>
       <div class="slide">
-        <div class="text">Клиент РА Гэлакси «Берлин-Хеми/А. Менарини» сохраняет за собой лидерство на рынке рекламы по медиа показателям. Продвижение всех брендов Заказчика под ключ, от медиапланирования и исследований до спонсорских и нестандартных кампаний, от креатива и Production до размещения. Легендарные кампании, слоганы и креативные решения, такие как "Если кашляешь - прими Бромгексин Берлин-Хеми", "В животе ураган - принимай Эспумизан", креатив и решения для брендов Лиотон, МИГ, Мезим, Фастум гель, Йодомарин (включая участие в разработке названия бренда "Йодомарин").</div>
+        <div class="text">Кстати, с совместной работы питерских художников с РА Гэлакси над видеороликом "Если кашляешь прими..." по сценарию агентства  начиналась российская студия "Мельница", известная своими полнометражными анимационными фильмами.</div>
+        <video src="videos/slide_2.mp4" autoplay controls class="video_item">        </video>
+      </div>
+      <div class="slide">
+        <div class="text">Клиент РА Гэлакси Ipsen достиг высоких медиа результатов и отличных результатов по продажам препаратов в период и по итогам проведения рекламной кампании. Продвижение брендов Заказчика под ключ, от креатива и Production до нестандартного размещения, включая проведение фокус-групп по креативу, контроль размещения на всех его этапах и полная оперативная организация необыкновенной рекламы.</div>
+        <video src="videos/slide_3_1.mp4" autoplay controls class="video_item">        </video>
+        <video src="videos/slide_3_2.mp4" autoplay controls class="video_item">        </video>
+      </div>
+      <div class="slide">
+        <div class="text">Кампания "Быструмгель. Поможет по-быструму" от РА Гэлакси имела огромный резонанс и высочайшие post-campaign показатели.</div>
+        <video src="videos/slide_4_1.mp4" autoplay controls class="video_item">        </video>
+        <video src="videos/slide_4_2.mp4" autoplay controls class="video_item">        </video>
+        <video src="videos/slide_4_3.mp4" autoplay controls class="video_item">        </video>
+        <video src="videos/slide_4_4.mp4" autoplay controls class="video_item">        </video>
+
+      </div>
+      <div class="slide">
+        <div class="text">Спонсорство на радио: не обыкновенные, сложные, нестандартные решения эксклюзивно от РА Гэлакси. Собственные спонсорские блоки в прайм-тайм, специальные спонсорские пакеты на топовых радиостанциях, включая приглашение звезд, озвучание от ведущего программы, интеграцию в эфир рекламного ролика и так далее.
+Певица Zivert читает гороскоп на Love radio. Спонсорство гороскопа обеспечивает РА Гэлакси.</div>
         <video src="videofile.ogg" autoplay poster="posterimage.jpg">        </video>
       </div>
 
@@ -352,7 +374,7 @@
           <input type="text" name="Name" value="" placeholder="Имя">
           <input type="text" name="Email" value="" placeholder=" e-mail">
         </div>
-          <input type="text" name="Massage" value="" placeholder="Сообщение">
+          <textarea name="Massage" rows="8" cols="80" placeholder="Сообщение"></textarea>
 
       </form>
 

@@ -11,6 +11,7 @@ body{
   margin: 0 auto;
   position: relative;
   font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
 }
 body::before {
   content:"";
@@ -178,7 +179,7 @@ margin-top: 30px;
   animation: row-move 33s linear infinite;
 }
 .galaxy_small {
-  width: 3550px;
+  width: 3300px;
   height:50px;
   background-image: url("../images/galaxy_small_row.png");
   background-size: contain;
@@ -301,9 +302,6 @@ hr{
   z-index: 4;
   padding-top: 150px;
 }
-.third_block {
-
-}
 .third_block p{
   font-size: 18px;
   font-weight: 400;
@@ -320,7 +318,15 @@ hr{
   z-index: 6;
 }
 
+.anim_wrapper{
+  width: 100vw;
+  height: 100%;
+  overflow:hidden;
+overflow-y:hidden;  /*для вертикального*/
+overflow-x:hidden;  /*для горизонтального*/
+position: absolute;
 
+}
 .yellow_curve_1{
   width: 100vw;
   height: 100%;
@@ -329,7 +335,8 @@ hr{
   background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
-  margin-top: -160px;
+  /* margin-top: -160px; */
+  /* overflow: hidden; */
 }
 .gray_square{
   width: 100vw;
@@ -338,19 +345,22 @@ hr{
   background-position: center;
   background-size: 80%;
   background-repeat: no-repeat;
+  /* background-size: contain; */
   position: absolute;
   margin-top: -160px;
   animation: rotate 25s linear infinite alternate;
 }
 @keyframes rotate {
   0%{
-    transform: rotate(-20deg);
+    transform: rotate(-10deg);
   }
   100%{
-    transform: rotate(20deg);
+    transform: rotate(30deg);
   }
 }
-
+.third .third_block:first-child {
+  margin-top: 100px;
+}
 .slider_box{
   width: 100vw;
   height: 100%;
@@ -680,6 +690,39 @@ hr{
   right: 0;
   margin-top: 50px;
 }
+header{
+
+height: 100vh;
+background: #fcfafa;
+position: relative;
+}
+.lines{
+height: 100%;
+width: 100%;
+position: absolute;
+}
+svg{
+  position: absolute;
+  top: 50%;
+  z-index: 0;
+  }
+  path {
+    stroke-dasharray: 0 1000;
+    animation: dash 2s linear infinite;
+    animation-fill-mode: forwards;
+      }
+
+@keyframes dash {
+0% {
+  stroke-dasharray: 1000 0;
+}
+100% {
+  stroke-dasharray:  0 1000;
+  }
+  }
+
+
+
 
 
 .repeat{
@@ -723,25 +766,32 @@ hr{
   filter: grayscale();
   margin: auto;
 }
-
+.slick-dots li button:before  {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50% !important;
+}
 .seven {
   width: 100vw;
   height: 700px;
   background-color: #2C54C5;
 }
-.slider {
-  /* width: 100%; */
-  /* height: 100%; */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  /* background-image: url("images/book/bk1.jpg") */
-  width: 100vw;
-  height: 800px;
+.slide {
+  width: 100%;
+  height: 700px;
+  vertical-align: middle;
 }
-.slider p {
-  width: 20vw;
+.video_item {
+  
 }
+
+.text{
+  width: 40vw;
+  position: relative;
+  margin: auto;
+  vertical-align: baseline;
+}
+
 .yellow_curve_2 {
   width: 630px;
   height: 370px;
@@ -757,6 +807,7 @@ hr{
    text-align: center;
    margin-top: 210px;
    z-index: 5;
+  position: relative;
  }
  .eight hr {
    margin-top: 100px;
@@ -918,6 +969,17 @@ input{
   margin-top: 20px;
   margin-bottom: 10px
 }
+textarea {
+  border-radius: 5px;
+  border: 1px solid #C4C4C4;
+  font-family: "Poppins";
+  height: 35px;
+  margin-top: 20px;
+  margin-bottom: 10px
+  width: 510px;
+  height: 200px;
+}
+
 .illustration_1{
   width: 770px;
   height: 570px;
