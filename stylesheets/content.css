@@ -361,15 +361,6 @@ position: absolute;
 .third .third_block:first-child {
   margin-top: 100px;
 }
-.slider_box{
-  width: 100vw;
-  height: 100%;
-  margin: auto;
-  /* margin-top: 3em; */
-  /* width: 70%; */
-  /* height: 50em; */
-  margin: auto;
-}
 
 .gray_square{
 
@@ -766,23 +757,28 @@ svg{
   filter: grayscale();
   margin: auto;
 }
-.slick-dots li button:before  {
+/* .slick-dots li button:before  {
   width: 10px !important;
   height: 10px !important;
   border-radius: 50% !important;
-}
+} */
 .seven {
   width: 100vw;
   height: 700px;
   background-color: #2C54C5;
 }
+.slider_box{
+  width: 100vw;
+  height: 700px;
+  margin: auto;
+}
+
 .slide {
   width: 100%;
   height: 700px;
   vertical-align: middle;
 }
 .video_item {
-  
 }
 
 .text{
