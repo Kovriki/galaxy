@@ -757,11 +757,11 @@ svg{
   filter: grayscale();
   margin: auto;
 }
-/* .slick-dots li button:before  {
+.slick-dots li button {
   width: 10px !important;
   height: 10px !important;
   border-radius: 50% !important;
-} */
+}
 .seven {
   width: 100vw;
   height: 700px;
