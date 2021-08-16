@@ -16,8 +16,11 @@
 
     <link rel="stylesheet" href="stylesheets/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/libs/slick/slick.min.js"></script>
     <script src="js/main.js">
-
+        $(document).ready(function(){
+          $('.single-item').slick();
+        });
     </script>
   </head>
   <body>
@@ -25,19 +28,18 @@
       <!-- <div class=""> -->
         <div class="logo"></div>
         <div class="menu">
-          <div class="menu_item">О НАС</div>
-          <div class="menu_item">УСЛУГИ</div>
-          <div class="menu_item">КЛИЕНТЫ</div>
-          <div class="menu_item">ПАРТНЁРЫ</div>
-          <div class="menu_item">КОНТАКТЫ</div>
-          <div class="menu_item">ЭКСПЕРТИЗА</div>
+          <a href="#n1" class="menu_item">О НАС</a>
+          <a href="#n2" class="menu_item">УСЛУГИ</a>
+          <a href="#n3" class="menu_item">КЛИЕНТЫ</a>
+          <a href="#n4" class="menu_item">ПАРТНЁРЫ</a>
+          <a href="#" class="menu_item">ЭКСПЕРТИЗА</a>
+          <a href="#n6" class="menu_item">КОНТАКТЫ</a>
           <div class="number">+7 (495) 609-69-94</div>
 
         </div>
       <!-- </div> -->
 
     </nav>
-
     <div class="illustration_1"></div>
 <div class="first_box">
   <h1>НЕОБЫКНОВЕННАЯ <br>РЕКЛАМА </h1>
@@ -45,19 +47,22 @@
   <br>лидер медиабаинга спонсорства в&nbspСМИ&nbspРФ
   </p>
 
-  <div class="btn_podrobnee">
+  <a class="btn_podrobnee"  href="#n7">
     <div class="btn_more">
 
     </div>
     <!-- <p>Подробнее</p>
     <div class="icon"></div> -->
+  </a>
+  <!-- <div class="stroke"></div> -->
+    <div class="wrapper">
+      <div class="galaxy_big"></div>
+      <div class="galaxy_small"></div>
   </div>
-  <div class="stroke"></div>
-</div>
-<div class="typo_comp"></div>
+<div class="typo_comp"id="n7"></div>
 <div class="stat"></div>
 
-<div class="second">
+<div class="second" id="n1">
   <h1>РЕКЛАМНОЕ АГЕНТСТВО ГЭЛАКСИ</h1>
   <hr>
   <div class="second_box">
@@ -78,8 +83,10 @@
   </div>
 </div>
 <div class="third">
-  
-  <div class="yellow_curve_1"></div>
+
+  <div class="yellow_curve_1">
+    <div class="gray_square"></div>
+  </div>
   <div class="gray_square"></div>
 
     <div class="third_block">
@@ -108,7 +115,7 @@
 <div class="round_galaxy"></div>
 </div>
 
-<div class="fourth">
+<div class="fourth" id="n2">
   <h1>НЕОБЫКНОВЕННАЯ РЕКЛАМА</h1>
   <hr>
   <div class="circles"></div>
@@ -219,10 +226,12 @@
 
 
 </div>
-<div class="stroke_2"></div>
+<div class="wrapper">
+  <div class="galaxy_big"></div>
+  <div class="galaxy_small"></div>
+</div>
 
-
-<div class="six">
+<div class="six" id="n3">
   <h1>ИЗБРАННЫЕ КЛИЕНТЫ</h1>
   <hr>
   <div class="clients_logo"></div>
@@ -230,15 +239,25 @@
 
 
 <div class="seven">
+    <div class="slider_box">
+      <div class="slide">
+        <div class="text">Клиент РА Гэлакси «Берлин-Хеми/А. Менарини» сохраняет за собой лидерство на рынке рекламы по медиа показателям. Продвижение всех брендов Заказчика под ключ, от медиапланирования и исследований до спонсорских и нестандартных кампаний, от креатива и Production до размещения. Легендарные кампании, слоганы и креативные решения, такие как "Если кашляешь - прими Бромгексин Берлин-Хеми", "В животе ураган - принимай Эспумизан", креатив и решения для брендов Лиотон, МИГ, Мезим, Фастум гель, Йодомарин (включая участие в разработке названия бренда "Йодомарин").</div>
+        <video src="videofile.ogg" autoplay poster="posterimage.jpg">        </video>
+      </div>
+      <div class="slide">
+        <div class="text">Клиент РА Гэлакси «Берлин-Хеми/А. Менарини» сохраняет за собой лидерство на рынке рекламы по медиа показателям. Продвижение всех брендов Заказчика под ключ, от медиапланирования и исследований до спонсорских и нестандартных кампаний, от креатива и Production до размещения. Легендарные кампании, слоганы и креативные решения, такие как "Если кашляешь - прими Бромгексин Берлин-Хеми", "В животе ураган - принимай Эспумизан", креатив и решения для брендов Лиотон, МИГ, Мезим, Фастум гель, Йодомарин (включая участие в разработке названия бренда "Йодомарин").</div>
+        <video src="videofile.ogg" autoplay poster="posterimage.jpg">        </video>
+      </div>
 
+    </div>
 </div>
 <div class="yellow_curve_2"></div>
 <!-- </div> -->
-<div class="eight">
-  <h1>ЭКСКЛЮЗИВНЫЕ<br>ПАРТНЕРЫ</h1>
+<div class="eight" id="n4">
+  <h1>ЭКСКЛЮЗИВНЫЕ<br>ПАРТНЁРЫ</h1>
 <hr>
 <p>РА Гэлакси медиаинтегрированное агентство,
-эксклюзивный партнер российских радиохолдингов:</p>
+эксклюзивный партнёр российских радиохолдингов:</p>
 
 </div>
 
@@ -279,7 +298,7 @@
   </div>
 </div>
 
-<div class="nine">
+<div class="nine" id="n6">
   <div class="nine_box">
     <h1>КОНТАКТЫ</h1>
     <hr>

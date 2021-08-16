@@ -51,6 +51,8 @@ align-items: center;
   font-weight: 500;
   align-items: center;
   display: flex;
+  color: black;
+  text-decoration: none;
 }
 .number {
   font-family: 'Poppins', sans-serif;
@@ -65,6 +67,19 @@ align-items: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
+
+
+
+/* якорные ссылки */
+#n1{}
+#n2{}
+#n3{}
+#n4{}
+#n5{}
+#n6{}
+#n7{}
+
+
 
 .first_box{
 width: 100vw;
@@ -86,7 +101,7 @@ position: inherit;
   font-weight: 500;
   margin-top: 30px;
   margin-left: 20vw;
-  color: #2C54C5;
+  /* color: #2C54C5; */
 }
 .btn_podrobnee {
   width: 100px;
@@ -140,6 +155,48 @@ margin-top: 30px;
   margin-bottom: 230px;
 }
 
+
+.wrapper {
+  height: 300px;
+  width: 100vw;
+  overflow: hidden;
+  padding: 15px 0;
+  position: relative;
+  margin-bottom: 80px;
+  display: flex;
+  margin-top: 100px;
+  /* flex-direction: row; */
+}
+.galaxy_big {
+  width: 3550px;
+  height:150px;
+  background-image: url("../images/galaxy_big_row.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  vertical-align: middle;
+  animation: row-move 33s linear infinite;
+}
+.galaxy_small {
+  width: 3550px;
+  height:50px;
+  background-image: url("../images/galaxy_small_row.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 175px;
+  vertical-align: middle;
+  animation: row-move-reverse 33s linear infinite;
+}
+
+    @keyframes row-move {
+      0% {right: -3550px;}
+      100% {right: 100%;}
+    }
+    @keyframes row-move-reverse {
+      0% {right: 100%;}
+      100% {right: -3550px;}
+    }
 .stat {
   width: 930px;
   height: 780px;
@@ -210,8 +267,11 @@ hr{
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 1;
-  margin-top: -60px;
   position: relative;
+  margin-top: 200px;
+  overflow: hidden;
+    box-sizing: border-box;
+    margin-left: 0;
   /* opacity: .4; */
 }
 
@@ -239,6 +299,10 @@ hr{
   margin: auto;
   /* margin-top: 300px; */
   z-index: 4;
+  padding-top: 150px;
+}
+.third_block {
+
 }
 .third_block p{
   font-size: 18px;
@@ -251,7 +315,7 @@ hr{
 
 }
 .third_text_block h2{
-  font-size: 36px;
+  font-size: 48px;
   font-weight: 600;
   z-index: 6;
 }
@@ -265,11 +329,37 @@ hr{
   background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
+  margin-top: -160px;
+}
+.gray_square{
+  width: 100vw;
+  height: 100%;
+  background-image: url("../images/gray_square.png");
+  background-position: center;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  position: absolute;
+  margin-top: -160px;
+  animation: rotate 25s linear infinite alternate;
+}
+@keyframes rotate {
+  0%{
+    transform: rotate(-20deg);
+  }
+  100%{
+    transform: rotate(20deg);
+  }
 }
 
-
-
-
+.slider_box{
+  width: 100vw;
+  height: 100%;
+  margin: auto;
+  /* margin-top: 3em; */
+  /* width: 70%; */
+  /* height: 50em; */
+  margin: auto;
+}
 
 .gray_square{
 
@@ -277,7 +367,7 @@ hr{
 
 .second_block {
   margin-left: 36%;
-  margin-top: 130px;
+  /* margin-top: 130px; */
   z-index: 7;
 
 }
@@ -568,15 +658,13 @@ hr{
   margin-top: 22px;
  line-height: 1.5;
 }
-.second_block {
-  margin-top: 250px;
-}
+
 .second_block h2{
-  margin-top: 40px;
+  /* margin-top: 40px; */
   margin-left: 0;
 }
 .second_block p{
-  margin-left: 0;
+  margin-left: 45px;
   margin-top: 22px;
 }
 
@@ -620,7 +708,7 @@ hr{
 .six h1 {
   /* position: relative; */
   text-align: center;
-  margin-top: 230px;
+  /* margin-top: 230px; */
 }
 .six hr {
   margin-bottom: 140px;
@@ -640,6 +728,19 @@ hr{
   width: 100vw;
   height: 700px;
   background-color: #2C54C5;
+}
+.slider {
+  /* width: 100%; */
+  /* height: 100%; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* background-image: url("images/book/bk1.jpg") */
+  width: 100vw;
+  height: 800px;
+}
+.slider p {
+  width: 20vw;
 }
 .yellow_curve_2 {
   width: 630px;
@@ -737,6 +838,8 @@ hr{
   font-family: "Roboto", sans-serif;
   line-height: 1.2;
   font-weight: 400;
+  margin-left: 0;
+  margin-top: 0;
  }
 
 .nine {
