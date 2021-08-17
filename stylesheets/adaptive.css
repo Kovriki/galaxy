@@ -1,11 +1,18 @@
 @media only screen and (max-width: 780px) {
 
-nav{
+nav, .btn_podrobnee {
   display: none;
 }
-
-
-
+.first_box h1{
+  font-size: 25px;
+}
+.first_box p{
+  font-size: 14px;
+}
+.illustration_1 {
+  right: 0
+  ;
+}
 
 
 }
