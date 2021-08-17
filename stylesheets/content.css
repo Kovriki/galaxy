@@ -673,7 +673,7 @@ position: absolute;
 .yellow_curve{
   width: 590px;
   height: 550px;
-  background-image: url("../images/yellow_curve.png");
+  /* background-image: url("../images/yellow_curve.png"); */
   background-position: left;
   background-repeat: no-repeat;
   background-size: contain;
