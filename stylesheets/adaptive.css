@@ -7,6 +7,8 @@ nav, .btn_podrobnee {
   font-size: 25px;
   margin-left: 10vw;
   margin-top: 50px;
+  line-height: 1.2;
+
 }
 .first_box p{
   font-size: 14px;
@@ -57,6 +59,8 @@ hr {
 .text_box h2 {
   font-size: 25px;
   margin:  auto 10vw ;
+  line-height: 1.2;
+
 
   /* margin-left: 10vw; */
 }
@@ -74,20 +78,34 @@ background-size: contain;
   -webkit-transform: rotate(90deg);
 -moz-transform: rotate(90deg);
 }
-
+.third{
+  height: 180vh;
+  margin-top: 0;
+}
 .third_text_block h2  {
   font-size: 25px;
+  line-height: 1.2;
 }
 .third_block{
   padding-top: 0;
 }
 .third_block p{
-.font-size: 18px;
+font-size: 18px;
 width: 80vw;
 }
 .second_block{
   margin: 0;
-  margin-top: 10vh;
+  margin-top: 30vh;
 }
+.anim_wrapper{
+  top: -70vh;
+}
+.gray_square {
+    margin-top: 45vh;
+    background-size: 160%;
+  }
+  .round_galaxy {
+    margin-top: 10vh;
+  }
 
 }
