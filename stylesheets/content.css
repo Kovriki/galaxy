@@ -699,19 +699,25 @@ svg{
   }
   path {
     stroke-dasharray: 0 1000;
-    animation: dash 2s linear infinite;
+    animation: dash 5s linear infinite;
     animation-fill-mode: forwards;
+    
       }
 
-@keyframes dash {
-0% {
-  stroke-dasharray: 1000 0;
-}
-100% {
-  stroke-dasharray:  0 1000;
-  }
-  }
-
+      @keyframes dash {
+      	0% {
+      		stroke-dasharray: 1300 0;
+        }
+      	45% {
+      		stroke-dasharray:  0 1300;
+          }
+        55%{
+      		stroke-dasharray:  0 1300;
+          }
+          100% {
+            stroke-dasharray: 1300 0;
+          }
+          }
 
 
 
