@@ -19,6 +19,75 @@ nav, .btn_podrobnee {
   background-position-x: 140vw;
     background-position-y: -20vw;
 }
+.wrapper{
+  margin-top: 40vh;
+}
 
+
+.typo_comp{
+  width: 100vw;
+  height: 60vh;
+  background-size: 95%;
+  margin-bottom: 0;
+
+}
+.stat{
+  width: 100vw;
+height: 60vh;
+  margin: 20px auto;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../images/stat_adaptive.png");
+
+}
+.second {
+       margin-top: 0;
+}
+hr {
+  width: 85vw;
+  margin: 20px auto ;
+}
+.second_box {
+  padding: 0;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+.text_box h2 {
+  font-size: 25px;
+  margin:  auto 10vw ;
+
+  /* margin-left: 10vw; */
+}
+.text_box .p_box p {
+  width: 80vw;
+  margin:  10vw 10vw;
+    /* margin: auto 10vw; */
+}
+.pattern {
+  width: 20vh;
+  width: 50vh;
+  /* height:  90vw; */
+  height:  130vw;
+background-size: contain;
+  -webkit-transform: rotate(90deg);
+-moz-transform: rotate(90deg);
+}
+
+.third_text_block h2  {
+  font-size: 25px;
+}
+.third_block{
+  padding-top: 0;
+}
+.third_block p{
+.font-size: 18px;
+width: 80vw;
+}
+.second_block{
+  margin: 0;
+  margin-top: 10vh;
+}
 
 }
