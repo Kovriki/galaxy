@@ -80,7 +80,13 @@ align-items: center;
 #n6{}
 #n7{}
 
-
+.adaptive_menu{
+  width: 100vw;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .first_box{
 width: 100vw;

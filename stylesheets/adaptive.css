@@ -5,13 +5,19 @@ nav, .btn_podrobnee {
 }
 .first_box h1{
   font-size: 25px;
+  margin-left: 10vw;
+  margin-top: 50px;
 }
 .first_box p{
   font-size: 14px;
+  margin-left: 10vw;
+  width: 90vw;
 }
 .illustration_1 {
-  right: 0
-  ;
+  background-size: contain;
+  /* right: 0; */
+  background-position-x: 140vw;
+    background-position-y: -20vw;
 }
 
 
