@@ -802,14 +802,20 @@ svg{
   /* position: absolute; */
   display: flex;
   margin: auto;
+  margin-right: 10vw;
 }
 
 .text{
-  width: 40vw;
-  /* position: absolute; */
-  display: flex;
-  margin: auto;
-  /* vertical-align: baseline; */
+  width: 30vw;
+      /* position: absolute; */
+      display: flex;
+      margin: auto;
+      margin-left: 10vw;
+      line-height: 1.3;
+      vertical-align: font-;
+      font-weight: 600;
+      color: white;
+      margin-left: 10vw;
 }
 .slide_items{
   width: 100vw;
