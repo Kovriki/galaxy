@@ -1,4 +1,4 @@
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 780px) and (max-device-width: 780px){
 
 nav, .btn_podrobnee {
   display: none;
@@ -68,6 +68,24 @@ hr {
   width: 80vw;
   margin:  10vw 10vw;
     /* margin: auto 10vw; */
+}
+.text{
+  width: 80vw;
+  margin: auto;
+}
+.video_item{
+  width: 80vw;
+  margin: auto;
+}
+audio{
+  width: 80vw;
+  margin: auto;
+}
+.audio_block{
+      padding-bottom: 10vw;
+}
+.slide_items{
+  flex-direction: column;
 }
 .pattern {
   width: 20vh;

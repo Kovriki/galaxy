@@ -799,7 +799,6 @@ svg{
 }
 .video_item {
   width: 40vw;
-  /* position: absolute; */
   display: flex;
   margin: auto;
   margin-right: 10vw;
@@ -807,15 +806,14 @@ svg{
 
 .text{
   width: 30vw;
-      /* position: absolute; */
-      display: flex;
-      margin: auto;
-      margin-left: 10vw;
-      line-height: 1.3;
-      vertical-align: font-;
-      font-weight: 600;
-      color: white;
-      margin-left: 10vw;
+  display: flex;
+  margin: auto;
+  margin-left: 10vw;
+  line-height: 1.3;
+  vertical-align: font-;
+  font-weight: 600;
+  color: white;
+  margin-left: 10vw;
 }
 .slide_items{
   width: 100vw;
@@ -830,8 +828,6 @@ audio{
   margin-right: 10vw;
 }
 .audio_block {
-  /* width: 100%; */
-  /* height: 100%; */
   display: flex;
   flex-direction: column;
   justify-content:

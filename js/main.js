@@ -29,17 +29,75 @@ $(document).ready(function() {
 		});
 	});
 
-	$(document).ready(function() {
-	  $('.slider_box').slick({
-	    // slidesToShow: 3,
-	    // slidesToScroll: 1,
-			arrows: false,
-			dots: true,
-			button:false,
-	    autoplay: true,
-	    autoplaySpeed: 40000,
-			dots: true,
-	  });
-	});
+// 	$(document).ready(function() {
+// 	  $('.slider_box').slick({
+// 	    // slidesToShow: 3,
+// 	    // slidesToScroll: 1,
+// 			arrows: false,
+// 			dots: true,
+// 			button:false,
+// 	    autoplay: true,
+// 	    autoplaySpeed: 40000,
+// 			dots: true,
+// 			onAfterChange : function() {
+// 					 player.stopVideo();
+// 	  },
+// 	});
+// })
+
+
+///////
+$('.slider_box').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 30000,
+      dots: true,
+      infinite: true,
+      adaptiveHeight: true,
+      arrows: false
+  });
+
+  var video = $('.slider_box .slick-active').find('video').get(0).play();
+
+  $('.slider_box').on('afterChange', function(event, slick, currentSlide, nextSlide){
+    $('.slider_box .slick-slide').find('video').get(0).pause();
+    var video = $('slider_box .slick-active').find('video').get(0).play();
+});
+
+/////////
+//
+// $('video').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+//     var data = {"event":"command","func":"pauseVideo","args":""};
+//     var message = JSON.stringify(data);
+//     $("video", slick.$slides[currentSlide])[0].contentWindow.postMessage(message, '*');
+// });
+
+
+/////////
+
+
+// остановка автослайдера при воспроизведении видео
+// function onPlayerReady() {
+//     $("#slide-video").on("click", function() {
+//
+//         // pause the slider
+//         $('#slider').slick('slickPause');
+//
+//         $(this).css('background','transparent');
+//         $("#player").show();
+//         player.playVideo();
+//     });
+// }
+
+
+
+
+	// $('.slider_box').on('afterChange', function(event, slick, currentSlide){
+	//   if (currentSlide == 2) {
+	//     $('.slider_box').slick('slickPause');
+	//     myVideo.play();
+	//   }
+	// });
 
 });
