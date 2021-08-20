@@ -50,7 +50,7 @@
       text-align: left;
       animation: mem 6s infinite linear ;
       offset-rotate: 0deg;
-          left: 480px;
+      /* left: 480px; */
     }
     .pl_sput {
 
@@ -68,8 +68,11 @@
 
 }
 .p_2{
-  offset-path: path("M647.21,1174.86c79-239.89,305.07-413.08,571.67-413.08,332.28,0,601.65,269,601.65,600.94s-269.37,601-601.65,601-601.66-269.06-601.66-600.95a599.63,599.63,0,0,1,30-187.86");
-
+  offset-path: path("M251.987 502.402C113.632 502.402 1.47266 390.243 1.47266 251.888C1.47266 113.533 113.632 1.37402 251.987 1.37402C390.342 1.37402 502.501 113.533 502.501 251.888C502.501 319.591 475.644 381.02 432.003 426.105C386.46 473.155 322.639 502.402 251.987 502.402Z");
+  /* left: -50px;
+  top: -48px; */
+  left: -121px;
+  top: -122px;
 }
     #o_1 {
       width: 260px;
@@ -80,11 +83,18 @@
       width: 424px;
       height: 424px;
       z-index: 2;
+    }
 
+  .box .text ~ .p_2{
+          left: -170px;
+    }
+  .box .text ~ .p_1{
+            left: -45px;
     }
 
 div{
-  position: relative;
+  position: absolute;
+  margin: auto;
 }
 
 
@@ -107,12 +117,20 @@ div{
 <!-- </div> -->
 
   <div class="pl_sput" id="o_1">
-    <!-- <div class="text">DIGITAL</div> -->
+    <div class="box">
+    <div class="text p_1">DIGITAL</div>
     <div class="planet p_1"></div>
+  </div>
+
   <!-- </div> -->
-  <div class="pl_sput" id="o_2">
-    <!-- <div class="text">DIGITAL</div> -->
+
+  <!-- </div> -->
+  <!-- <div class="pl_sput" id="o_2"> -->
+  <div class="box">
+    <div class="text p_2">DIGITAL</div>
     <div class="planet p_2"></div>
+  </div>
+
   </div>
 </div>
 
