@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+    .wrapper{
+      display: flex;
+      width: 1100px;
+      height: 1100px;
+      justify-content: center;
+      align-items: center;
+      background-image: url("images/svg_anim/orbits.png");
+      background-size: contain;
+      box-sizing: border-box;
+      background-repeat: no-repeat;
+    }
+    .orbit{
+      display: block;
+      position: absolute;
+      margin: auto;
+    }
+    .path{
+      width: 260px;
+      height: 260px;
+      background-image: url("images/path.svg");
+      background-position: center;
+      background-size: contain;
+      display: inline-block;
+      background-repeat: no-repeat;
+      top: 10px;
+      left: 40px;
+      position: absolute;
+
+    }
+    .planet {
+      width: 20px;
+      height: 20px;
+      background-color: #FFDE7A;
+      border-radius: 50%;
+      display: block;
+      position: absolute;
+      /* offset-path: path("M258.005 130.851C258.005 202.382 202.016 260.351 130.505 260.351C58.9844 260.351 1.00525 202.371 1.00525 130.851C1.00525 59.3297 58.9844 1.35059 130.505 1.35059C202.016 1.35059 258.005 59.3195 258.005 130.851Z"); */
+      animation: mem 6s infinite linear ;
+    }
+    .text{
+      offset-path: path("M258.005 130.851C258.005 202.382 202.016 260.351 130.505 260.351C58.9844 260.351 1.00525 202.371 1.00525 130.851C1.00525 59.3297 58.9844 1.35059 130.505 1.35059C202.016 1.35059 258.005 59.3195 258.005 130.851Z");
+      display: block;
+      position: absolute;
+      text-align: left;
+      animation: mem 6s infinite linear ;
+      offset-rotate: 0deg;
+          left: 480px;
+    }
+    .pl_sput {
+
+      display: flex;
+      flex-direction: row;
+      /* flex-wrap: nowrap; */
+      /* position: absolute; */
+      /* offset-path: path("M258.005 130.851C258.005 202.382 202.016 260.351 130.505 260.351C58.9844 260.351 1.00525 202.371 1.00525 130.851C1.00525 59.3297 58.9844 1.35059 130.505 1.35059C202.016 1.35059 258.005 59.3195 258.005 130.851Z"); */
+      offset-rotate: 0deg;
+      /* animation: mem 6s infinite linear ; */
+    }
+
+.p_1{
+  offset-path: path("M258.005 130.851C258.005 202.382 202.016 260.351 130.505 260.351C58.9844 260.351 1.00525 202.371 1.00525 130.851C1.00525 59.3297 58.9844 1.35059 130.505 1.35059C202.016 1.35059 258.005 59.3195 258.005 130.851Z");
+
+}
+.p_2{
+  offset-path: path("M647.21,1174.86c79-239.89,305.07-413.08,571.67-413.08,332.28,0,601.65,269,601.65,600.94s-269.37,601-601.65,601-601.66-269.06-601.66-600.95a599.63,599.63,0,0,1,30-187.86");
+
+}
+    #o_1 {
+      width: 260px;
+      height: 260px;
+      z-index: 1;
+    }
+    #o_2{
+      width: 424px;
+      height: 424px;
+      z-index: 2;
+
+    }
+
+div{
+  position: relative;
+}
+
+
+
+    @keyframes mem{
+      100%{
+        offset-distance: 100%;
+      }
+    }
+    </style>
+    <script type="text/javascript">
+    </script>
+  </head>
+  <body>
+
+
+<div class="wrapper">
+  <!-- <div class="pl_sput"> -->
+
+<!-- </div> -->
+
+  <div class="pl_sput" id="o_1">
+    <!-- <div class="text">DIGITAL</div> -->
+    <div class="planet p_1"></div>
+  <!-- </div> -->
+  <div class="pl_sput" id="o_2">
+    <!-- <div class="text">DIGITAL</div> -->
+    <div class="planet p_2"></div>
+  </div>
+</div>
+
+
+
+<!-- <div class="wrapper">
+        <div class="orbit">
+              <div class="path"></div>
+              <div class="pl_sput">
+                <div class="text">DIGITAL</div>
+                <div class="planet"></div>
+              </div>
+        </div>
+        <div class="orbit">
+              <div class="path"></div>
+              <div class="pl_sput">
+                <div class="text">DIGITAL</div>
+                <div class="planet"></div>
+              </div>
+        </div>
+</div>
+
+ -->
+
+  </body>
+</html>
