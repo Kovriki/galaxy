@@ -1049,3 +1049,12 @@ textarea {
   right: 0;
   /* margin-top: 80px;  */
 }
+.main_anim {
+  width: 770px;
+    height: 570px;
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: 140%;
+    position: absolute;
+    right: 0;
+}
