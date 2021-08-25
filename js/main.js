@@ -17,7 +17,7 @@ $(document).ready(function() {
 		return false;
 	});
 	$(function() {
-	$('.menu a, .btn_podrobnee').each(function() {
+	$('.menu .menu_item, .btn_podrobnee').each(function() {
 		$(this).on('click', function(e) {
 			e.preventDefault();
 			var scrollTo = $(this).attr('href');
