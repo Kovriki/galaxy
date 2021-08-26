@@ -1190,3 +1190,9 @@ margin-top: 150px;
 .yellow_cicl.ex {
   margin-left: 15vw;
 }
+.second ~ .ex {
+      margin-top: 0;
+}
+.third ~ .ex {
+  margin-top: 0;
+}
