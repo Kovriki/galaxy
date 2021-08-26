@@ -6,7 +6,7 @@ body{
   background: white;
   width: 100vw;
   /* width: 1440px; */
-  height: 14844px;
+  /* height: 14844px; */
   display: block;
   margin: 0 auto;
   position: relative;
@@ -221,7 +221,7 @@ margin-top: 30px;
   margin-top: 240px;
   margin-bottom: 50px;
 }
-.second  h1, .fourth h1, .six h1, .eight h1, .nine h1 {
+.second  h1, .fourth h1, .six h1, .eight h1, .nine h1, .ex h1{
   font-family: 'Poppins', sans-serif;
   font-size: 72px;
   font-weight: 600;
@@ -498,7 +498,7 @@ position: absolute;
   border-bottom: 1px solid white;
   width: 722px;
 }
-.yellow_rec h2, .trans_rec h2, .yellow_cicl h2, .second_block h2{
+.yellow_rec h2, .trans_rec h2, .yellow_cicl h2, .second_block h2, .gray_circle h2{
   font-size: 48px;
   font-weight: 600;
   z-index: 6;
@@ -588,6 +588,7 @@ position: absolute;
   text-align: center;
 
 }
+
 .white_arrow_point{
   width:77px;
   height: 77px;
@@ -611,25 +612,8 @@ position: absolute;
 
   margin-top: 30px;
 }
-.yellow_cicl p{
-  top: 25px;
-  line-height: 1.5;
-  font-weight: 400;
-  position: relative;
-  margin: auto;
-  text-align: center;
-  margin-top: 25px;
 
-}
-.glay_circle{
-  width: 450px;
-  height: 450px;
-  /* background-color: #FFDE7A; */
-  border-radius: 50%;
-  border: 1px #c4c4c4 solid;
-  position: relative;
-  margin: auto;
-}
+
 
 
 
@@ -1120,7 +1104,6 @@ li{
 
 }
 .present{
-
   width: 80vw;
   height: 70vw;
   background-image: url("../images/present.png");
@@ -1131,11 +1114,12 @@ li{
   margin: auto;
 }
 .yellow_rec_ex{
-  width: 722px;
-  height: 482px;
+  width: 80vw;
+  height: 60vw;
   background-color: #FFDE7A;
+  margin: auto;
   margin-top: 55px;
-  margin-left: 8%;
+  /* margin-left: 8%; */
   position: relative;
   padding-top: 70px;
   /* padding-left: 120px; */
@@ -1164,5 +1148,45 @@ li{
   color: white;
   border: none;
   border-bottom: 1px solid white;
-  width: 722px;
+  width: 100%;
+}
+.ex p {
+  width: 90%;
+}
+.gray_circle h2{
+  margin: auto;
+  margin-top: 150px;
+  position: relative;
+  text-align: center;
+}
+.gray_circle p {
+  top: 25px;
+  line-height: 1.5;
+  font-weight: 400;
+  position: relative;
+  margin: auto;
+  text-align: center;
+  margin-top: 25px;
+  width: 90%;
+}
+.gray_cicl p:first-child {
+  position: relative;
+  margin-top: 30px;
+}
+.gray_circle{
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  border: 1px #c4c4c4 solid;
+  position: relative;
+  margin: auto;
+  top: -140px;
+  margin-right: 15vw;
+
+}
+.ex h1 {
+margin-top: 150px;
+}
+.yellow_cicl.ex {
+  margin-left: 15vw;
 }
