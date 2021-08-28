@@ -1106,7 +1106,7 @@ li{
 .present{
   width: 80vw;
   height: 70vw;
-  background-image: url("../images/present.png");
+  background-image: url("../images/ex_stat_2.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1193,6 +1193,12 @@ margin-top: 150px;
 .second ~ .ex {
       margin-top: 0;
 }
-.third ~ .ex {
+.third.ex {
   margin-top: 0;
+  height: 0;
+  min-height: 800px;
+  max-height: 900px;
+}
+.ex_svg {
+  top: 0;
 }
