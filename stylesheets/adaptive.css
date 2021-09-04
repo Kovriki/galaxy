@@ -147,12 +147,12 @@ width: 80vw;
   transition: all .6s ease-out;
 
 }
-p{
+.p_box p{
   transition: all .6s ease-out;
   position: relative;
   width: 40vw;
 }
-p::before{
+.p_1::before, .p_2::before, .p_3::before{
   content: " ";
   width: 250px;
   height: 250px;
@@ -163,33 +163,33 @@ p::before{
   left: -300px;
 }
 
-p:hover{
+.p_box p:hover{
   margin-bottom:  3em;
   margin-top: 3em;
   transition: all .6s ease-out;
 
 }
-p:hover:first-child {
+.p_box p:hover:first-child {
   margin-bottom:  3em;
   margin-top: 1em;
   transition: all .6s ease-out;
 }
 
-p:hover:nth-child(even) {
+.p_box p:hover:nth-child(even) {
   margin-bottom: 8em;
   margin-top: 1em;
   transition: all .6s ease-out;
 }
-p:nth-child(2):hover{
+.p_box p:nth-child(2):hover{
   margin-top: 4em;
 }
-p:nth-child(2):hover{
+.p_box p:nth-child(2):hover{
   margin-top: 4em;
 }
-p:nth-child(3):hover{
+.p_box p:nth-child(3):hover{
   margin-top: 4em;
 }
-p:nth-child(even):hover + p:nth-child(odd)   {
+.p_box p:nth-child(even):hover + p:nth-child(odd)   {
   margin-bottom:  3em;
   margin-top: -3em;
   transition: all .6s ease-out;
