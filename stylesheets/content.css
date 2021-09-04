@@ -251,12 +251,12 @@ hr{
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
   font-weight: 400;
-  margin-top: 40px;
+  /* margin-top: 40px; */
   margin-left: 170px;
   line-height: 1.5;
 }
 .p_box p:first-child  {
-    margin-top: 80px;
+    /* margin-top: 80px; */
 }
 .pattern {
   width: 500px;
@@ -1262,4 +1262,93 @@ p span {
 }
 .third.ex.r_1 ul {
   margin-top: 30px;
+}
+/* анимация ховером: */
+.flex{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+}
+.r_box{
+  width: 250px;
+}
+.r_box .round {
+  /* position: absolute; */
+}
+/* .r_1{margin-top: 60px;}
+.r_2{margin-top: 120px;}
+.r_3{margin-top: 180px;} */
+.p_box{
+  width: 40vw;
+  margin-left: 30px;
+  margin-top: 80px;
+  transition: all .6s ease-out;
+  /* transition-delay: .3s; */
+
+}
+p{
+  transition: all .6s ease-out;
+  position: relative;
+  width: 40vw;
+}
+p::before{
+  content: " ";
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 1px solid #2C54C5;
+  position: absolute;
+  top: -50px;
+  left: -300px;
+}
+/* .circle {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 1px solid #2C54C5;
+} */
+p:hover{
+  margin-bottom:  3em;
+  margin-top: 3em;
+  transition: all .6s ease-out;
+  /* transition-delay: .3s; */
+
+}
+p:hover:first-child {
+  margin-bottom:  3em;
+  margin-top: 1em;
+  transition: all .6s ease-out;
+  /* transition-delay: .3s; */
+}
+
+p:hover:nth-child(even) {
+  margin-bottom: 8em;
+  margin-top: 1em;
+  transition: all .6s ease-out;
+  /* transition-delay: .3s; */
+}
+p:nth-child(2):hover{
+  margin-top: 4em;
+}
+p:nth-child(2):hover{
+  margin-top: 4em;
+}
+p:nth-child(3):hover{
+  margin-top: 4em;
+}
+p:nth-child(even):hover + p:nth-child(odd)   {
+  margin-bottom:  3em;
+  margin-top: -3em;
+  transition: all .6s ease-out;
+  /* transition-delay: .3s; */
+}
+
+.marg{
+  margin-top: -120px;
+  margin-bottom:  -120px;
+}
+.up{
+  margin-top: -3em;
 }

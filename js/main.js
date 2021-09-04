@@ -65,6 +65,14 @@ $('.slider_box').slick({
     var video = $('slider_box .slick-active').find('video').get(0).play();
 });
 
+
+$(".p_2").hover(function(){
+	$(".p_1").toggleClass("up")
+})
+
+$(".p_3").hover(function(){
+	$(".p_1,p_2").toggleClass("up");
+})
 /////////
 //
 // $('video').on('beforeChange', function(event, slick, currentSlide, nextSlide){
