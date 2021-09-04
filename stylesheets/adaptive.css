@@ -127,3 +127,78 @@ width: 80vw;
   }
 
 }
+
+/* анимация ховером: */
+.flex{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+}
+.r_box{
+  width: 250px;
+}
+
+.p_box{
+  width: 40vw;
+  margin-left: 30px;
+  margin-top: 80px;
+  transition: all .6s ease-out;
+
+}
+p{
+  transition: all .6s ease-out;
+  position: relative;
+  width: 40vw;
+}
+p::before{
+  content: " ";
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 1px solid #2C54C5;
+  position: absolute;
+  top: -50px;
+  left: -300px;
+}
+
+p:hover{
+  margin-bottom:  3em;
+  margin-top: 3em;
+  transition: all .6s ease-out;
+
+}
+p:hover:first-child {
+  margin-bottom:  3em;
+  margin-top: 1em;
+  transition: all .6s ease-out;
+}
+
+p:hover:nth-child(even) {
+  margin-bottom: 8em;
+  margin-top: 1em;
+  transition: all .6s ease-out;
+}
+p:nth-child(2):hover{
+  margin-top: 4em;
+}
+p:nth-child(2):hover{
+  margin-top: 4em;
+}
+p:nth-child(3):hover{
+  margin-top: 4em;
+}
+p:nth-child(even):hover + p:nth-child(odd)   {
+  margin-bottom:  3em;
+  margin-top: -3em;
+  transition: all .6s ease-out;
+}
+
+.marg{
+  margin-top: -120px;
+  margin-bottom:  -120px;
+}
+.up{
+  margin-top: -3em;
+}
