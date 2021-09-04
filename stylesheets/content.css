@@ -236,8 +236,8 @@ hr{
 .second_box{
   display: flex;
   flex-direction: row;
-  padding-left: 160px;
-  padding-right: 160px;
+  padding-left: 9vw;
+  padding-right: 9vw;
 }
 .text_box h2{
   font-family: 'Poppins', sans-serif;
@@ -247,7 +247,7 @@ hr{
   margin-top: 30px;
 }
 .text_box .p_box  p {
-  width: 600px;
+  width: 40vw;
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
   font-weight: 400;
